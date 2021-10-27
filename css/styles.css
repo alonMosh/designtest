@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'abuget';
+    src: url('fonts/abuget-webfont.woff2') format('woff2'),
+    url('fonts/abuget-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    --primary-color: #9482ff;
+    --dark-color: #7768cc;
+    --grey-purple: #6a6680;
+    --almost-black: #1e1a33;
+    --light-color: #d6cfff;
+    --almost-white: #f5f5f7;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* Typography */
+html {
+    font-size: 62.5%;
+}
+
