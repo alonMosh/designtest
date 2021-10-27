@@ -20,8 +20,77 @@
     box-sizing: border-box;
 }
 
+body {
+    background: var(--almost-white);
+}
+
 /* Typography */
 html {
     font-size: 62.5%;
 }
 
+h1, h2, h3 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4.6rem;
+    line-height: 5.3rem;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 5.4rem;
+        line-height: 6.4rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+    }
+}
+
+/* Grids */
+.grid {
+    display: grid;
+}
+
+@media screem and (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Buttons */
+.btn {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding: 1rem 1.7rem;
+}
+
+/* Icons */
+.icon {
+    fill: var(--light-color);
+    width: 7rem;
+    height: 7rem;
+}
