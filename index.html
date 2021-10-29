@@ -14,6 +14,52 @@
     <link rel="icon" href="images/sprite(1).svg">
 </head>
 <body>
+<div class="background__image-container">
+    <img class="background__image" src="images/Photo1_v2.jpg" alt="">
+</div>
+<div class="back">
+    <div class="background">
+        <header>
+            <nav class="nav collapsible collapsible--expanded">
+                <a href="index.html"><img class="nav__icon" src="images/logo_rdb_white@2x.png" alt=""></a>
+                <svg class="nav__toggler">
+                    <use href="images/sprite(1).svg#hamburger"></use>
+                </svg>
 
+                <ul class="list nav__list collapsible__content">
+                    <li class="nav__item ">
+                        <div class="current-page">
+                            <a class="nav__link" href="">Home</a>
+                            <svg class="icon current-page__line">
+                                <use href="images/sprite(1).svg#line"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="">Portfolio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+     <div class="hero grid">
+         <div class="hero__content">
+             <h4 class="hero__introduction">Welcome, I'm Rino</h4>
+             <h1 class="hero__heading">This is a big title with at least two lines of text</h1>
+             <p class="hero__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                 Aenean commodo ligula eget dolor. Aenean massa.</p>
+             <h3 class="hero__name">Rino</h3>
+         </div>
+         <div></div>
+     </div>
+</div>
+<script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach((item) =>
+        item.addEventListener("click", function () {
+            this.classList.toggle("collapsible--expanded");
+        })
+    );
+</script>
 </body>
 </html>

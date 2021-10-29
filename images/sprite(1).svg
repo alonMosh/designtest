@@ -29,7 +29,7 @@
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 34 26" id="hamburger">
     <defs>
       <clipPath id="a">
-        <rect width="34" height="26"></rect>
+        <rect width="34" height="26" fill="none"></rect>
       </clipPath>
     </defs>
     <g clip-path="url(#a)">
@@ -43,6 +43,9 @@
         <line x2="27" transform="translate(68.5 81.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"></line>
       </g>
     </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 2" id="line">
+    <rect width="50" height="2" fill="#9482ff"></rect>
   </symbol>
   <symbol id="01 Website design" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.01 55.83">
     <g id="Group_6" transform="translate(39.438 39.374)">

@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'abuget';
-    src: url('fonts/abuget-webfont.woff2') format('woff2'),
-    url('fonts/abuget-webfont.woff') format('woff');
+    src: url('/fonts/abuget-webfont.woff2') format('woff2'),
+    url('/fonts/abuget-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -20,10 +20,16 @@
     box-sizing: border-box;
 }
 
-body {
-    background: var(--almost-white);
+.back {
+    max-width: 85vw;
+    margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+    .back {
+        max-width: 80vw;
+    }
+}
 /* Typography */
 html {
     font-size: 62.5%;
@@ -56,6 +62,21 @@ body {
     line-height: 2.5rem;
 }
 
+.list {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+a {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 5.4rem;
@@ -73,7 +94,7 @@ body {
     display: grid;
 }
 
-@media screem and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -93,4 +114,191 @@ body {
     fill: var(--light-color);
     width: 7rem;
     height: 7rem;
+}
+
+/* Lists */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Nav menu */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.current-page__line {
+    width: 45px;
+    height: 5px;
+    object-fit: fill;
+}
+
+.nav__list {
+    margin-top: 0;
+}
+
+.current-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-page p {
+    margin: 0;
+}
+
+.nav__link {
+    color: white;
+}
+
+.nav__icon {
+    width: 110px;
+    height: 55px;
+}
+
+.nav__item {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.nav__toggler {
+    width: 45px;
+    height: 45px;
+}
+
+.nav__item a {
+    transition: color .3s;
+}
+
+.nav__item:hover a {
+    color: #CFCBE6;
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        flex-wrap: nowrap;
+        margin-top: 2rem;
+    }
+
+    .nav__list {
+        width: auto;
+        display: flex;
+        max-height: 100%;
+        opacity: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__item {
+        margin-left: 5rem;
+    }
+
+    .current-page {
+        justify-items: flex-end;
+        position: relative;
+        top: 3px;
+    }
+}
+
+/* Background */
+body {
+    background: var(--almost-white);
+}
+
+.background__image-container {
+    overflow: hidden;
+}
+
+.background__image {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .background__image {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+}
+
+/* Collapsible */
+.collapsible {
+    flex-wrap: wrap;
+}
+
+.collapsible__content {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: max-height .3s, opacity .3s;
+}
+
+.collapsible--expanded .collapsible__content {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    opacity: 1;
+    max-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    .collapsible {
+        flex-wrap: nowrap;
+    }
+
+    .collapsible__content {
+        opacity: 1;
+        max-height: 100vh;
+    }
+
+    .collapsible--expanded .collapsible__content {
+        opacity: 1;
+        max-height: 100vh;
+    }
+}
+
+/* Hero */
+.hero__content {
+    margin-top: 0;
+}
+
+.hero__introduction {
+    margin-bottom: 0.45rem;
+     color: var(--primary-color);
+}
+.hero__heading {
+    margin-top: 0.45rem;
+    margin-bottom: 0.45rem;
+    color: white;
+}
+.hero__text {
+    margin-top: 0.45rem;
+    margin-bottom: 0.45rem;
+    color: white;
+}
+.hero__name {
+    margin-top: 0.45rem;
+    color: white;
+    font-family: 'abuget', Arial, sans-serif;
+    font-size: 6rem;
+    line-height: 6.2rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__content {
+        margin-top: 4rem;
+    }
 }
