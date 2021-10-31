@@ -299,24 +299,9 @@ body {
 
 .background__image {
     position: absolute;
-    z-index: -1;
-    width: 100%;
-}
-
-@media screen and (max-width: 400px) {
-    .background__image {
-        height: 180vh;
-        width: 100vw;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width: 400px) and (max-width: 1100px) {
-    .background__image {
-        height: 120vh;
-        width: 100vw;
-        object-fit: cover;
-    }
+    width: 100vw;
+    object-fit: cover;
+    height: 110vh;
 }
 
 /* Collapsible */
@@ -596,7 +581,7 @@ body {
 
 @media screen and (min-width: 1100px) {
     .projects {
-        margin-top: 10rem;
+        margin-top: 15rem;
     }
 
     .projects__text {
