@@ -113,6 +113,12 @@ body {
     }
 }
 
+@media screen and (min-width: 850px) and (max-height: 380px) {
+    .background__image {
+        height: 220vh;
+    }
+}
+
 /* Typography */
 html {
     font-size: 62.5%;
