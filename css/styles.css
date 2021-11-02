@@ -321,6 +321,12 @@ a {
     object-fit: fill;
 }
 
+.current-page__line-portfolio {
+    width: 70px;
+    height: 4px;
+    object-fit: fill;
+}
+
 .nav__list {
     margin-top: 0;
 }
@@ -883,5 +889,82 @@ footer a {
 
     .footer__brand img {
         width: 70%;
+    }
+}
+
+/* Page 2- Portfolio */
+
+.portfolio-page__heading{
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+
+.portfolio-page__item-title {
+    margin: 1rem 0;
+}
+
+.portfolio-page__item-paragraph {
+    margin: 1rem 0;
+}
+
+.portfolio-page__item-link {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.portfolio-page__items {
+    justify-content: space-between;
+    row-gap: 8rem;
+    margin: 20rem 0 5rem;
+}
+
+.portfolio-page__items img {
+    width: 100%;
+}
+
+.portfolio-page__items-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-page__items {
+        justify-content: space-between;
+        row-gap: 8rem;
+        column-gap: 5rem;
+        margin: 8rem 0;
+    }
+
+    .portfolio-page__heading{
+        text-align: center;
+        color: white;
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 900px) {
+    .portfolio-page .background__image {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 500px) and (min-height: 1000px) {
+    .portfolio-page .background__image {
+        height: 65vh;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-height: 450px) {
+    .portfolio-page .background__image {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 300px) and (min-height: 650px) {
+    .portfolio-page .background__image {
+        height: 120vh;
     }
 }
