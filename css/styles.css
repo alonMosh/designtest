@@ -1045,9 +1045,9 @@ footer a {
     margin-top: 5rem;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.16);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) and (max-height: 1000px){
     .about .background__image {
-        height: 215vh;
+        height: 200vh;
     }
 }
 
@@ -1059,7 +1059,7 @@ footer a {
 
 @media screen and (max-width: 400px) and (min-height: 850px) {
     .about .background__image {
-        height: 100vh;
+        height: 124vh;
     }
 }
 
